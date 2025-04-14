@@ -25,7 +25,8 @@ import React from 'react';
               <th onClick={() => onSort('category')}>
                 Category{getSortIndicator('category')}
               </th>
-        
+             <th onClick={() => onSort('date')}>
+             Date{getSortIndicator('date')}</th>
               <th>Action</th>
 
             </tr>
@@ -39,7 +40,7 @@ import React from 'react';
                   <td>{expense.description}</td>
                   <td>{expense.amount.toFixed(2)}</td> {}
                   <td>{expense.category}</td>
-                  
+                  <td> {expense.date}</td>
                   <td>
                 
                     <button 
